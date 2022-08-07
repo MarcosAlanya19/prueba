@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*{
+    border: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* --- --- NAV --- --- */
+.nav-center{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.front-page{
+    display: flex;
+    justify-content: center;
+
+    img{
+        display: flex;
+        justify-content: center;
+        width: 50vw;
+    }
+}
+
+.carousel{
+    justify-content: center;
+}
+
+.products{
+    text-align: center;
+    font-weight: bold;
+    img{
+        border: 1px solid black;
+    }
+    .btn{
+        background: white;
+        font-weight: bold;
+        border: 1px solid black;
+    }
+    .btn:hover{
+        background: black;
+        color: white;
+    }
+}
+
+/* --- --- CAROUSEL --- --- */
+.carousel{
+    .carousel__indicadores .glider-dot {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: black;
+        opacity: .2;
+        border-radius: 0;
+    }
+    
+    .carousel__indicadores .glider-dot:hover {
+        opacity: .5;
+    }
+    
+    .carousel__indicadores .glider-dot.active {
+        opacity: 1;
+    }
+    .contenedor{
+        margin-top: 2rem;
+        max-width: 1200px;
+        width: 90%;
+        margin: auto;
+        }
+        .carousel__contenedor {
+            position: relative;
+            .carousel__anterior {
+                left: -30px;
+            }
+            .carousel__siguiente {
+            right: -30px;
+            }
+            .carousel__anterior,
+            .carousel__siguiente {
+                position: absolute;
+                display: block;
+                width: 30px;
+                height: 30px;
+                border: none;
+                top: calc(50% - 35px);
+                cursor: pointer;
+                line-height: 30px;
+                text-align: center;
+                background: none;
+                color: #000000;
+                opacity: 50%;
+            .carousel__anterior:hover,
+            .carousel__siguiente:hover {
+            opacity: 100%;
+            }
+        }
+        .carousel__lista {
+            overflow: hidden;
+        }
+        .carousel__elemento{
+            margin: 1rem;
+            text-align: center;
+            img{
+                border: 1px solid #8e929b;
+            }
+            .card-title{
+                margin-top: 0.5rem;
+                color: #4b4f58;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .card-title:hover{
+                color: #955b89;
+            }
+            .card-text{
+                color: #4b4f58;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            a{
+                margin-top: -0.6rem;
+                color: black;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            a:hover{
+                color: white;
+                background: black;
+            }
+        }
+        
+    }
+}
+
+.carousel2{
+    .carousel__indicadores2 .glider-dot {
+        display: block;
+        width: 30px;
+        height: 4px;
+        background: black;
+        opacity: .2;
+        border-radius: 0;
+    }
+    
+    .carousel__indicadores2 .glider-dot:hover {
+        opacity: .5;
+    }
+    
+    .carousel__indicadores2 .glider-dot.active {
+        opacity: 1;
+    }
+    .contenedor{
+        margin-top: 2rem;
+        max-width: 1200px;
+        width: 90%;
+        margin: auto;
+        }
+        .carousel__contenedor {
+            position: relative;
+            .carousel__anterior2 {
+                left: -30px;
+            }
+            .carousel__siguiente2 {
+            right: -30px;
+            }
+            .carousel__anterior2,
+            .carousel__siguiente2 {
+                position: absolute;
+                display: block;
+                width: 30px;
+                height: 30px;
+                border: none;
+                top: calc(50% - 35px);
+                cursor: pointer;
+                line-height: 30px;
+                text-align: center;
+                background: none;
+                color: #000000;
+                opacity: 50%;
+            .carousel__anterior2:hover,
+            .carousel__siguiente2:hover {
+            opacity: 100%;
+            }
+        }
+        .carousel__lista2 {
+            overflow: hidden;
+        }
+        .carousel__elemento{
+            margin: 1rem;
+            text-align: center;
+            img{
+                border: 1px solid #8e929b;
+            }
+            .card-title{
+                margin-top: 0.5rem;
+                color: #4b4f58;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            .card-title:hover{
+                color: #955b89;
+            }
+            .card-text{
+                color: #4b4f58;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            a{
+                margin-top: -0.6rem;
+                color: black;
+                font-weight: bold;
+                font-size: 15px;
+            }
+            a:hover{
+                color: white;
+                background: black;
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 800px) {
+	.contenido-principal {
+		flex-direction: column;
+	}
+	.contenido-principal > * {
+		width: 100%;
+	}
+}
+
+@media(max-width: 768px){
+    .carousel2{
+        .carousel__contenedor {
+            position: relative;
+            .carousel__anterior2 {
+                display: none;
+            }
+            .carousel__siguiente2 {
+                display: none;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .carousel{
+        .carousel__contenedor {
+            position: relative;
+            .carousel__anterior {
+                display: none;
+            }
+            .carousel__siguiente {
+                display: none;
+            }
+        }
+    }
+}
